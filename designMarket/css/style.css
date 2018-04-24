@@ -1,0 +1,471 @@
+/* --- Styling for Homepage / Generic Styling for all pages --- */
+
+@font-face {
+    font-family: Helvetica;
+    src: url('../fonts/helvetica.otf');
+}
+
+body {
+    background: radial-gradient(circle, #2C7CAC, #243464);
+    background-color: #2C7CAC;
+    background-repeat:round;
+    font-family: Helvetica;
+    margin: 0;
+    padding: 0;
+    width: 100%;  
+}
+
+p {
+    color: #243464;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.content {
+    margin: 0 auto;
+    width: 960px;
+    
+}
+
+.clear {
+    clear: both;
+}
+
+/* --- Styling for Navigation Bar --- */
+
+header {
+    background-color: #FFF;
+    border-bottom: 3px solid #CC7854;  
+    height: 110px;
+    margin-top: 0px;
+    width: 100%;
+    z-index: 10;
+}
+
+#homeButton {
+    margin-left: 30px;
+    margin-right: 50px;
+}
+
+#navigationMenu {
+    float: left;
+    position: relative;
+    width: 600px;
+}
+
+#navigationMenu ul {
+    display: block;
+    list-style: none;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+
+#navigationMenu li {
+    float: left;
+    list-style: none;
+    margin-top: 9px;
+    padding-left: 21px;   
+}
+
+#navigationMenu li a {
+    color: #243464;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+#navigationMenu li a.active {
+    color: #FF7C00;
+}
+
+#navigationMenu li a:hover {
+    color: #2C7CAC;
+}
+
+#loginButtons {
+    float: right;
+    position: relative;
+    width: 360px;
+}
+
+#loginButtons ul {
+    display: block;
+    list-style: none;   
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#loginButtons li {   
+    float: left;
+    list-style: none;
+    margin-top: 9px;   
+    margin-left: 30px;
+    padding: 15px;
+    
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+#loginButtons a {
+    color: #F9F9F9;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+#loginButton {
+    background-color: #1C4C9C;
+    border-radius: 10px;
+}
+
+#loginButton:hover {
+    background-color: #2C7CAC;
+}
+
+#registerButton {
+    background-color: #CC7854;
+    border-radius: 10px;
+}
+
+#registerButton:hover {
+    background-color: #DC8C74;
+}
+
+/* --- --- */
+
+#container {
+    color: #243464;
+    text-align: center;
+}
+
+#container p {
+    font-weight: 300; 
+    color: #243464;
+}
+
+#container h1 {
+    font-size: 70px;
+}
+
+#container h2 {
+    font-size: 30px;
+}
+
+/* --- --- */
+
+/* --- Banner Section of Homepage --- */
+
+#banner {
+    background:url('../images/randomBannerFromInternet.jpg') 100% 0 no-repeat;
+    background-color: #FFFFF2;
+    background-size: cover;
+    border-bottom: 3px solid #CC7854;
+    color: #243464;
+    height: 800px;
+    margin: 0;
+    padding: 113px 0 0px 0;
+    text-align: center;  
+}
+
+#banner h1 {
+    background-color: #F9F9F9;
+    border: 3px solid #CC7854;
+     border-radius: 30px;
+    display: block;
+    margin-top: 150px;
+    padding: 50px 50px 50px 50px;
+    text-align: left; 
+}
+
+#banner h2 {  
+    background-color: #F9F9F9;
+    border: 3px solid #CC7854;
+    border-radius: 30px;
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+    width: 600px;
+}
+
+/* --- --- */
+
+/* --- About Section of Homepage --- */
+
+#about {
+    background-color: #F9F9F9;
+    height: 750px;
+    padding: 10px 10px 10px;
+}
+
+#aboutLeft {
+    float: left;
+    margin-top: 50px;
+    text-align: left;
+    width: 400px;
+}
+
+#brownBorder {
+    border-bottom: 3px solid #CC7854;
+    padding-bottom: 25px;
+}
+
+#aboutLeft li {
+    margin-left: -20px;
+    margin-top: 10px;
+}
+
+#aboutRight {
+    float: right;
+    margin-top: 150px;
+    text-align: left; 
+    width: 400px;
+}
+
+/* --- --- */
+
+/* --- Example Section of Homepage --- */
+
+#examples {
+    background-color: #2C7CAC;
+    color: #F9F9F9;
+    height: 700px;
+    padding: 10px 10px 10px;
+}
+
+#examples ul {
+    border-bottom: 3px solid #F9F9F9;
+    display: block;
+    list-style: none;
+    margin: 0 auto;
+    margin-top: 35px; 
+}
+
+#examples li {
+    display: block;
+    float: left;
+    list-style: none;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding-left: 20px;
+}
+
+
+#examples img {
+    border: 3px solid #CC7854;
+    border-radius: 50%;
+    border-spacing: 5px;
+}
+
+/* --- --- */
+
+/* --- Start Now Section of Homepage --- */
+
+#startNow {
+    background-color: #F9F9F9;
+    height: 700px;
+    padding: 10px 10px 10px;
+}
+
+#startNow ul {
+    border-bottom: 3px solid #2C7CAC;
+    display: block;
+    list-style: none;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+
+#startNow li {
+    
+    display: block;
+    float: left;
+    list-style: none;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px; 
+}
+
+#startNow img {
+    border: 3px solid #2C7CAC;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* --- --- */
+
+/* --- Meet the Makers Section of the Homepage--- */
+
+#meet {
+    background-color: #CC7854;
+    color: #F9F9F9;
+    height: 800px;
+    padding: 10px 10px 10px;
+}
+
+#meet h1 {
+    border-bottom: 3px solid #F9F9F9;
+    margin-top: 50px;
+    padding-bottom: 30px; 
+}
+
+#meet img {
+    border-radius: 50%;
+    border: 3px solid #F9F9F9;
+    padding: 5px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+#meet li:hover img{
+    border: 13px solid #243464;
+    padding: 0px;
+}
+
+#meet li:hover h3{
+    color: #243464;
+    font-size: 20px;
+    padding-bottom: 7px;
+    border-bottom: 3px solid #F9F9F9;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+#meet ul {
+    list-style: none;
+    display: block;
+    margin: 0 auto;
+    margin-top: 25px;
+    
+}
+
+#meet li {
+    margin: 0 auto;
+    display: block;
+    float: left;
+    width: 30%;
+    list-style: none;
+    margin: 1.5%;
+}
+
+#meet li p {
+    color: #F9F9F9;
+}
+
+/* --- --- */
+
+/* --- Footer Styling --- */
+
+footer {
+    padding-top: 10px;
+    height: 450px;
+    width: 100%;
+    background-color: #243464;
+    color: #F9F9F9;
+    text-align: center;
+    box-shadow: 0px 0px 10px black; 
+}
+
+footer p {
+    color: #F9F9F9;
+    font-size: 13px;
+}
+
+#siteMap {
+    height: 300px;
+}
+
+#siteMap ul {
+    list-style: none;
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    padding: 1.5%;
+    float: left;
+    border-bottom: 3px solid #F9F9F9;
+    height: 250px;
+    
+}
+
+#copyright {
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* --- --- */
+
+/* --- --- */
+
+/* --- Styling for the Login / Register Pages --- */
+
+#formContainer {
+    margin: 0 auto;
+    width: 400px;
+    margin-top: 100px;
+    background-color: white;
+    color: #243464;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0px 0px 10px black; 
+    border-radius: 5px;
+}
+
+#formContainer a {
+    color: #CC7854;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#formContainer input[type=password] {
+    border: 3px solid #ccc;
+    box-sizing: border-box;
+    font-size: 20px;
+    margin: 8px 0;
+    outline: none;
+    padding: 12px 20px;
+    text-align: left;
+    
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    
+    width: 300px;
+}
+
+#formContainer input[type=text] {
+    border: 3px solid #ccc;
+    box-sizing: border-box;
+    font-size: 20px;
+    margin: 8px 0;
+    outline: none;
+    padding: 12px 20px;
+    text-align: left;
+    
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    
+    width: 300px;
+}
+
+#formContainer input[type=text]:focus {
+    border: 3px solid #243464;
+}
+
+#formContainer input[type=submit] { 
+    background-color: #243464;
+    color: #F9F9F9;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 30px;
+    outline: none;
+    padding: 15px;  
+}
+
+#formContainer input[type=submit]:active {
+    background-color: #CC7854;
+}
+
+#formContainer input[type=submit]:focus {
+    background-color: #CC7854;
+}
+
+/* --- --- */
