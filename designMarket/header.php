@@ -1,6 +1,3 @@
-<?php 
-    session_start();
-?>
 <!DOCTYPE html>
 
 <html>
@@ -9,8 +6,6 @@
     <link rel="icon" type="image/png" href="images/homeButton.png" />
     
     <head>
-        
-        <title>Design Market - Home</title>
         
         <link rel="icon" type="image/png" href="images/logo.png">
         
@@ -29,24 +24,32 @@
                 
                 <nav id="navigationMenu">
         
-                    <li><a href="home.html"  id="homeButton"><img src="images/logo.png" width="75"></a></li>
+                    <li><a href="home.php"  id="homeButton"><img src="images/logo.png" width="70"></a></li>
             
                     <ul> 
-                        <li><a href="marketplace.html">Marketplace</a></li> 
-                        <li><a href="support.html">Support</a></li> 
+                        <li><a href="marketplace.php">Marketplace</a></li> 
+                        <li><a href="support.php">Support</a></li> 
                     </ul>
                 
                 </nav>
                 
                 <!-- Needs php: When User is logged in, should show Profile button instead of Login/Register -->
                 
+                <?php 
+                if (!isset($_SESSION['username']) || !isset($_SESSION['password'])) { ?>
+                
                 <nav id="loginButtons">
                     
                     <ul>
-                        <a href="login.html"><li id="loginButton">Login</li></a> 
-                        <a href="register.html"><li id="registerButton">Sign Up</li></a> 
+                        <li><a id="loginButton" href="login.php">Login</a></li> 
+                        <li><a id="registerButton" href="register.php">Sign Up</a></li> 
                     </ul>
                 </nav>
+                
+                <?php 
+                } else { 
+                            echo $_SESSION['username'];
+                } ?>
                 
             </div>
         
