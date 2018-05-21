@@ -49,36 +49,9 @@
     </head>
     
     <body>
-    
-        <header>
         
-            <div class="content">
-                
-                <nav id="navigationMenu">
-        
-                    <li><a href="home.html"  id="homeButton"><img src="images/logo.png" width="80"></a></li>
+        <?php include('header.php'); ?>      
             
-                    <ul> 
-                        <li><a href="marketplace.html">Marketplace</a></li> 
-                        <li><a href="support.html">Support</a></li> 
-                    </ul>
-                
-                </nav>
-                
-                <!-- Needs php: When User is logged in, should show Profile button instead of Login/Register -->
-                
-                <nav id="loginButtons">
-                    
-                    <ul>
-                        <a href="login.html"><li id="loginButton">Login</li></a> 
-                        <a href="register.html"><li id="registerButton">Sign Up</li></a> 
-                    </ul>
-                </nav>
-                
-            </div>
-        
-        </header>
-        
         <div id="postContainer">
             
             <li>
@@ -113,8 +86,7 @@
                 <h1>Budget</h1>
                 <p>Select your budget range from which people can bid between, you may also select whether it is a hard budget or soft budget. Soft budget meaning bidders can bid above or below your budget range.</p>
     
-                <div id="postBudget">
-                    
+                <div id="postBudget"> 
                 <h4>Budget Minimum</h4>
                     <span class="AUD"><input id="projectMinBudget" type="number" name="minSum" value="0" step=".01" onchange="minCheck(this)" min="0"></span>
                 </div>
@@ -130,15 +102,17 @@
                 <br><br>
                 <input id="budgetType" type="radio" name="budgetType" value="Hard Budget">Hard Budget
                 </div>
-                
-                <div id="privacyType">
-                    <h4>Privacy Type</h4>
-                    <p>Spheel</p>
-                    <input id="privacyType" type="radio" name="privacyType" value="public">Public
-                    <br><br>
-                    <input id="privacyType" type="radio" name="privacyType" value="private">Private
-                </div>
             </li>
+            
+            <div id="postPrivacy">
+                <h1>Privacy Type</h1>
+                <p>Select your privacy type, Public meaning you anyone can see the bids and comments on your post, or Private meaning that only you can see the bids and comments on your post.</p>
+                <input id="privacyType" type="radio" name="privacyType" value="public">Public
+                <br><br>
+                <input id="privacyType" type="radio" name="privacyType" value="private">Private
+            </div>
+                
+            
             
             <input id="postProject" type="submit" value="Post Project">
 

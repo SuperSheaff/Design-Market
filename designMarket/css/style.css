@@ -39,7 +39,6 @@ header {
     background-color: #FFF;
     border-bottom: 3px solid #CC7854;  
     height: 80px;
-    margin-top: 0px;
     width: 100%;
     z-index: 10;
 }
@@ -65,7 +64,7 @@ header {
 #navigationMenu li {
     float: left;
     list-style: none;
-    margin-top: 9px;
+    margin-top: 11px;
     padding-left: 21px;   
 }
 
@@ -73,6 +72,9 @@ header {
     color: #243464;
     font-size: 24px;
     text-decoration: none;
+    
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
 }
 
 #navigationMenu li a.active {
@@ -93,35 +95,38 @@ header {
     display: block;
     list-style: none;   
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 11px;
 }
 
 #loginButtons li {   
     float: left;
-    list-style: none;
-    margin-top: 9px;   
+    list-style: none; 
     margin-left: 30px;
     padding: 15px;
-    
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
 }
 
-#loginButton {
+#loginButtons a {
     font-size: 24px;
     text-decoration: none;
+    
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
 }
 
 #loginButton {
+    color: #CC7854;
 }
 
 #loginButton:hover {
+    color: #2C7CAC;
 }
 
 #registerButton {
+    color: #CC7854;
 }
 
 #registerButton:hover {
+    color: #2C7CAC;
 }
 
 /* --- --- */
@@ -469,7 +474,7 @@ footer p {
     margin: 0 auto;
     width: 900px;
     margin-bottom: 100px;
-    margin-top: 100px;
+    margin-top: 50px;
     background-color: white;
     color: #243464;
     text-align: left;
@@ -580,11 +585,6 @@ footer p {
     width: 300px;
 }
 
-#postContainer input[type=file].btn {
-    height: 40px;
-}
-
-
 #postContainer input[type=submit] { 
     background-color: #243464;
     color: #F9F9F9;
@@ -612,6 +612,139 @@ footer p {
     float: left;
     height: 200px;
     width: 250px;
+}
+
+#postPrivacy {
+    list-style: none;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    padding: 10px;
+    text-align: left;
+}
+
+#privacType input[type=radio] {
+    margin-left: -10px;
+}
+
+
+/* --- --- */
+
+/* --- Styling for the marketplace Page --- */
+
+#marketplaceContainer {
+    margin: 0 auto;
+    width: 1200px;
+    margin-bottom: 50px;
+    height: 2140px;
+}
+
+#marketPoster {
+    margin-top: 50px;
+    display: block;
+    background-color: #CC7854;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0px 0px 10px black; 
+    border-radius: 5px;
+    width: 350px;
+    float: left;
+    text-decoration: none;
+    
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+}
+
+#marketplaceContainer a:hover {
+    background-color: #2C7CAC;
+}
+
+#marketSearch {
+    margin-top: 50px;
+    display: block;
+    background-color: white;
+    color: #243464;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0px 0px 10px black; 
+    border-radius: 5px;
+    width: 350px;
+    float: left;
+    height: 500px;
+}
+
+#marketPosts {
+    margin-top: 50px;
+    display: block;
+    background-color: white;
+    color: #243464;
+    text-align: left;
+    padding: 15px;
+    box-shadow: 0px 0px 10px black; 
+    border-radius: 5px;
+    width: 750px;
+    float: right;
+    height: 2050px;
+}
+
+#marketPages {
+    height: 10px;
+    float: none;
+    margin-bottom: 30px;
+}
+
+#marketPages ul {
+    
+}
+
+#marketPages li {
+    list-style: none;
+    background-color: #f9f9f9;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    float: left;
+    border: solid 1px #ccc;
+    margin-bottom: 10px;
+}
+
+#userPost {
+    margin: 0 auto;
+    height: 200px;
+    width: 700px;
+    border: solid 1px #ccc;
+    padding: 20px;
+}
+
+#postImage {
+    border: solid 1px #ccc;
+}
+
+#postRating {
+    margin-top: 15px;
+}
+
+#userPost h4 {
+    margin-top: 23px;
+    color: #2C7CAC;
+}
+#userPost ul {
+    width: 650px;
+    height: 70px;
+    padding-left: 0px;
+    margin-top: 0px;
+}
+
+#userPost li {
+    list-style: none;
+    float: left;
+    margin-right: 40px;
+}
+
+#footerBreaker {
+    height: 1px;
+    width: 100%;
 }
 
 /* --- --- */
