@@ -49,19 +49,18 @@
                         <h2>What are you waiting for?</h2>
                         
                         <ul>
-                            <li>Reason we're so great and you should join us.</li>
-                            <li>Another reason we're so great and you should join us.</li>
-                            <li>Another reason we're so great and you should join us.</li>
-                            <li>Another reason we're so great and you should join us.</li>
-                            <li>Another reason we're so great and you should join us.</li>
+                            <li>Work at home after finding interesting project with professional clients</li>
+                            <li>Showcase your creativity on a creative platform</li>
+                            <li>Use projects to improve your skills in real-world situations</li>
+                            <li>Bolster your portfolio with reviews from happy customers</li>
+                            <li>Find experienced designers for every project</li>
                         </ul>
                         
                     </div>
                     
                     <div id="aboutRight">
                         
-                        <p>Better make a sweet graphic animation here</p>
-                        <img src="images/logo.png" width="300">
+                        <img src="images/exampleMockup1.png" width="300">
                         
                     </div>
                 
@@ -74,16 +73,34 @@
                 <div class="content">
                 
                     <h2>Wondering what you can expect?</h2>
-                    <h2>Here are some jobs that have been completed:</h2>
+                    <h3>Here are some jobs that have been completed:</h3>
                     
                     <ul>
-                        <li><img src="images/logo.png" width="200"><p>Wow this ones great</p></li>
-                        <li><img src="images/logo.png" width="200"><p>I like this one</p></li>
-                        <li><img src="images/logo.png" width="200"><p>Nah this one is the best</p></li>
-                        <li><img src="images/logo.png" width="200"><p>ok</p></li>
+                        <li>
+                            <img src="images/exampleLogo1.png" width="200" height="200">
+                            <h3>Sponsor Bay</h3>
+                            <h4>by Mister Miyagi</h4>
+                            <p>This logo took Mister Miyagi 4 hours of work, he was compensated $200 for his time by the client</p>
+                        </li>
+                        <li>
+                            <img src="images/exampleLogo4.png" width="200" height="200">
+                            <h3>Xylo</h3>
+                            <h4>by Ashley Monarch</h4>
+                            <p>This logo took Ashley 5 hours of work, she was compensated $305 for her time after closely working with a client</p>
+                        </li>
+                        <li>
+                            <img src="images/examplePoster1.png" width="200" height="200">
+                            <h3>The Donation Ride</h3>
+                            <h4>by Rhett Williams</h4>
+                            <p>This poster by Rhett Williams was contracted by a client for a specific event, he was paid $100</p>
+                        </li>
+                        <li>
+                            <img src="images/examplePoster2.png" width="200" height="200">
+                            <h3>Second Album Launch</h3>
+                            <h4>by Sarah Norton</h4>
+                            <p>An up and coming band accepted Sarahs bid, 3 days later they had an awesome poster and she had $200</p>
+                        </li>
                     </ul>
-                    
-                    <h2>Section will have the 'users' that made good projects and their rating</h2>
                 
                 </div>
             
@@ -94,12 +111,37 @@
                 <div class="content">
                 
                     <h2>What kind of project do you want to start?</h2>
+                    <h3>Hover for more</h3>
                     
                     <ul>
-                        <li><h3>Logo Design</h3><img src="images/randomPencilFromInternet.jpg"></li>
-                        <li><h3>Poster Design</h3><img src="images/randomPencilFromInternet.jpg"></li>
-                        <li><h3>Web Design</h3><img src="images/randomPencilFromInternet.jpg"></li>
-                        <li><h3>Banner Design</h3><img src="images/randomPencilFromInternet.jpg"></li>
+                        <li>
+                            <h3>Logo Design</h3>
+                            <img src="images/logoIcon.png">
+                            <p>Do you need a logo for your up and coming business? Or maybe a re-design of an already existing logo?</p>
+                        </li>
+                        <li>
+                            <h3>Poster Creation</h3>
+                            <img src="images/posterIcon.png">
+                            <p>Got an up and coming event that needs an advertising poster? Look for poster design specialists in the marketplace</p>
+                        </li>
+                        <li>
+                            <h3>Web Development</h3>
+                            <img src="images/webdIcon.png">
+                            <p>Get Web Development professionals to create a website that is tailored to your project, personal or business</p>
+                        </li>
+                    </ul>
+                    
+                    <ul>
+                        <li>
+                            <h3>Banner Production</h3>
+                            <img src="images/bannerIcon.png">
+                            <p>Need a large scale banner for a party, or a high resolution banner for your next web project?</p>
+                        </li>
+                        <li>
+                            <h3>Animation</h3>
+                            <img src="images/animationIcon.png">
+                            <p>Get in contact with high-level animators to create the video you always wanted to</p>
+                        </li>
                     </ul>
                 
                 </div>
@@ -113,9 +155,24 @@
                     <h1>Meet the Makers</h1>
                     
                     <ul>
-                        <li><h2>Ben Fowler</h2><img src="images/ben.png"><h3>Front-End Designer</h3><p>Completing his Bachelor of Multimedia Design, strong skills across most Creative Cloud applications and skills in website development and javascript programming.</p></li>
-                        <li><h2>Lachlan Paulsen</h2><img src="images/lachlan.png"><h3>Back-End Programmer</h3><p>Stuff about meStuff about meStuff about meStuff about meStuff about meStuff about meStuff about meStuff about meStuff about meStuff about meStuff about me</p></li>
-                        <li><h2>Aashish Kumar</h2><img src="images/aashish.png"><h3>Graphic Designer</h3><p>Stuff about meStuff about meStuff about meStuff about meStuff about meStuff about meStuff about meStuff about meStuff about meStuff about meStuff about me</p></li>
+                        <li>
+                            <h2>Ben Fowler</h2>
+                            <img src="images/ben.png">
+                            <h3>Front-End Designer</h3>
+                            <p>Completing his Bachelor of Multimedia Design, strong skills across most Creative Cloud applications and skills in website development and javascript programming.</p>
+                        </li>
+                        <li>
+                            <h2>Lachlan Paulsen</h2>
+                            <img src="images/lachlan.png">
+                            <h3>Back-End Programmer</h3>
+                            <p>Stuff about meStuff about meStuff about meStuff about meStuff about meStuff about meStuff about meStuff about meStuff about meStuff about meStuff about me</p>
+                        </li>
+                        <li>
+                            <h2>Aashish Kumar</h2>
+                            <img src="images/aashish.png">
+                            <h3>Graphic Designer</h3>
+                            <p>Stuff about meStuff about meStuff about meStuff about meStuff about meStuff about meStuff about meStuff about meStuff about meStuff about meStuff about me</p>
+                        </li>
                     </ul>
                 
                 </div>

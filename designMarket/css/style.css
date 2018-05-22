@@ -163,6 +163,7 @@ header {
     margin: 0;
     padding: 113px 0 0px 0;
     text-align: center;  
+    box-shadow: inset 0px 5px 5px -5px black, inset 0px -5px 5px -5px black;  
 }
 
 #banner h1 {
@@ -189,7 +190,7 @@ header {
 /* --- About Section of Homepage --- */
 
 #about {
-    background-color: #F9F9F9;
+    background-color: white;
     height: 750px;
     padding: 10px 10px 10px;
 }
@@ -223,14 +224,15 @@ header {
 /* --- Example Section of Homepage --- */
 
 #examples {
-    background-color: #2C7CAC;
-    color: #F9F9F9;
+    background-color: lightgrey;
+    color: #2C7CAC;
     height: 700px;
     padding: 10px 10px 10px;
+    box-shadow: inset 0px 10px 10px -10px black, inset 0px -10px 10px -10px black;  
 }
 
 #examples ul {
-    border-bottom: 3px solid #F9F9F9;
+    border-bottom: 3px solid #2C7CAC;
     display: block;
     list-style: none;
     margin: 0 auto;
@@ -245,13 +247,20 @@ header {
     margin-bottom: 50px;
     margin-top: 50px;
     padding-left: 20px;
+    width: 22%;
 }
 
 
 #examples img {
-    border: 3px solid #CC7854;
+    border: 1px solid #2C7CAC;
     border-radius: 50%;
     border-spacing: 5px;
+    padding: 2px;
+}
+
+#examples p {
+    color: #243464;
+    font-style: italic;
 }
 
 /* --- --- */
@@ -259,35 +268,75 @@ header {
 /* --- Start Now Section of Homepage --- */
 
 #startNow {
-    background-color: #F9F9F9;
-    height: 700px;
+    background-color: #ffffff;
+    height: 930px;
     padding: 10px 10px 10px;
 }
 
 #startNow ul {
-    border-bottom: 3px solid #2C7CAC;
+    border-bottom:;
     display: block;
     list-style: none;
     margin: 0 auto;
-    margin-top: 35px;
+    margin-top: 15px;
+    padding: 0px;
+    width: 100%;
 }
 
+#startNow ul.nav {
+    text-align: center;
+}
+
+
 #startNow li {
-    
-    display: block;
-    float: left;
+    display: inline-block;
     list-style: none;
-    margin: 0 auto;
-    margin-bottom: 50px;
+    text-align: center;
+    margin-bottom: 25px;
     margin-top: 50px;
     padding-left: 30px;
     padding-right: 30px; 
+    width: 25%;
+    height: 300px;
+    
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+#startNow li:hover {
+    color: #2C7CAC;
+    margin: 0;
+}
+
+#startNow li p {
+    color: white;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+#startNow li:hover p {
+    color: #CC7854;
 }
 
 #startNow img {
-    border: 3px solid #2C7CAC;
+    border: 2px solid #2C7CAC;
     border-radius: 50%;
-    padding: 10px;
+    padding: 0px;
+    width: 150px;
+    
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+#startNow li:hover img {
+    border: 4px solid #2C7CAC;
+    border-radius: 50%;
+    padding: 0px;
+    width: 200px;
+}
+
+#startNow h3 {
+    color: #CC7854;
 }
 
 /* --- --- */
@@ -299,6 +348,7 @@ header {
     color: #F9F9F9;
     height: 800px;
     padding: 10px 10px 10px;
+    box-shadow: inset 0px 10px 10px -10px black, inset 0px -10px 10px -10px black;  
 }
 
 #meet h1 {
@@ -311,6 +361,7 @@ header {
     border-radius: 50%;
     border: 3px solid #F9F9F9;
     padding: 5px;
+    
     -webkit-transition: 0.5s;
     transition: 0.5s;
 }
@@ -334,12 +385,12 @@ header {
     display: block;
     margin: 0 auto;
     margin-top: 25px;
-    
+    width: 100%;
 }
 
 #meet li {
     margin: 0 auto;
-    display: block;
+    display: inline-block;
     float: left;
     width: 30%;
     list-style: none;
@@ -348,6 +399,14 @@ header {
 
 #meet li p {
     color: #F9F9F9;
+    opacity: 0;
+    
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+#meet li:hover p {
+    opacity: 1;
 }
 
 /* --- --- */
