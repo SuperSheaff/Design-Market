@@ -69,17 +69,16 @@
 	                <textarea rows="4" cols="50" name="description" placeholder="Tell us about your vision..."></textarea>
 	                <br><br>
 	            </li>
-	            
+
 	            <li>
-	                <h1>Inspiration</h1>
-	                <p>Upload images that relate to your project, whether that be progress images,  concept sketches or general inspiration.</p>
+	                <h1>Category</h1>
+	                <p>Select the category that best describes your project</p>
 	                <select name ="category">
-	                	<option value="Logo">Logo Design</option>
-	                	<option value="Poster">Poster Design</option>
-	                	<option value="Animation">Animation Design</option>
-	                	<option value="Web">Web Design</option>
-	                	<option value="Banner">Banner Design</option>
-	                </select>
+                        <option value="Logo">Logo Design</option>
+                        <option value="Poster">Poster Creation</option>
+                        <option value="Animation">Animation</option>
+                        <option value="Web">Web Development</option>
+                        <option value="Banner">Banner Production</option>
 	                <br><br>
 	            </li>
 
