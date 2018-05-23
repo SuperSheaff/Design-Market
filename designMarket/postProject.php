@@ -73,6 +73,19 @@
 	            <li>
 	                <h1>Inspiration</h1>
 	                <p>Upload images that relate to your project, whether that be progress images,  concept sketches or general inspiration.</p>
+	                <select name ="category">
+	                	<option value="Logo">Logo Design</option>
+	                	<option value="Poster">Poster Design</option>
+	                	<option value="Animation">Animation Design</option>
+	                	<option value="Web">Web Design</option>
+	                	<option value="Banner">Banner Design</option>
+	                </select>
+	                <br><br>
+	            </li>
+
+	            <li>
+	                <h1>Inspiration</h1>
+	                <p>Upload images that relate to your project, whether that be progress images,  concept sketches or general inspiration.</p>
 	                <input type="file" name="uploadInspiration" multiple accept="image/*">
 	                <br><br>
 	            </li>

@@ -5,6 +5,7 @@
 	$user = $_SESSION["username"];
 	$name = mysqli_real_escape_string($con, $_POST["name"]);
 	$description = mysqli_real_escape_string($con, $_POST["description"]);
+	$category = mysqli_real_escape_string($con, $_POST["category"]);
 
 	$source = "./uploads/" . basename($_FILES["uploadInspiration"]["name"]);
 	$error = 1;
@@ -24,7 +25,7 @@
 	$budget = mysqli_real_escape_string($con, $_POST["budgetType"]);
 	$privacy = mysqli_real_escape_string($con, $_POST["privacyType"]);
 
-	$sql = "INSERT INTO posts (posted_by, name, description, inspiration, min_budget, max_budget, budget_type, privacy) VALUES ('$user', '$name', '$description', '$inspiration', '$min', '$max', '$budget', '$privacy')";
+	$sql = "INSERT INTO posts (posted_by, name, description, category, inspiration, min_budget, max_budget, budget_type, privacy) VALUES ('$user', '$name', '$description', '$category', '$inspiration', '$min', '$max', '$budget', '$privacy')";
 	$con->query($sql);
 ?>
 <script>
