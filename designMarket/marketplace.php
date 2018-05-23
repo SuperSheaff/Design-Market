@@ -1,5 +1,9 @@
 <?php 
+    $con = mysqli_connect("localhost", "admin", "password", "design_market");
     session_start();
+    $sql = "SELECT * FROM posts WHERE completed='0' ORDER BY date_added";
+    $result = $con->query($sql);
+    $totalposts = $result->num_rows;
 ?>
 <!DOCTYPE html>
 <html>
@@ -13,6 +17,15 @@
         
         <link rel="icon" type="image/png" href="images/logo.png">
         
+        <?php
+            if (!isset($_GET['page'])) {
+                echo "<script>window.location.replace('./marketplace.php?page=1')</script>";    
+            } else if ($_GET['page'] > ceil($totalposts/8)) {
+                echo "<script>window.location.replace('./marketplace.php?page=1')</script>";
+            } else  {
+                $page = $_GET['page'];
+            }
+        ?>
         <!-- Space for scripts -->
         <script></script>
         
@@ -31,120 +44,72 @@
             <div id="marketPosts">
                 <div id="marketPages">
                     <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
+                        <?php 
+                            if ($page + 4 > ceil($totalposts/8)) {
+                                $navstart = ceil($totalposts/8) - 4;
+                                if (0 > $navstart) {
+                                    $navstart = 1;
+                                }
+                            } else {
+                                if ($page == 1) {
+                                    $navstart = 1;
+                                } else {
+                                    $navstart = $page - 1;
+                                }
+                            }
+                            for ($i = $navstart; $i < $navstart + 5; $i++) {
+                                if ($i <= ceil($totalposts/8)) {
+                                    echo "<li><a href='./marketplace.php?page=$i'>$i</a></li>";
+                                }
+                            }
+                        ?>
                     </ul>
                 </div>
                 
                 <!-- User Posts, have 8 per page -->
                 <!-- 4 lines per description -->
                 
-                <div id="userPost">
-                    
-                    <ul>
-                        <li><img src="images/ben.png" width="70" id="postImage"></li>
-                        <li><img src="images/fiveStars.png" width="200" id="postRating"></li>
-                        <li><h4>Budget Min - Budget Max</h4></li>
-                    </ul>
-                    
-                    <h3>Post Title</h3>
-                    <p>PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription</p>
-                </div>
-                
-                <div id="userPost">
-                    
-                    <ul>
-                        <li><img src="images/ben.png" width="70" id="postImage"></li>
-                        <li><img src="images/fiveStars.png" width="200" id="postRating"></li>
-                        <li><h4>Budget Min - Budget Max</h4></li>
-                    </ul>
-                    
-                    <h3>Post Title</h3>
-                    <p>PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription</p>
-                </div>
-                
-                <div id="userPost">
-                    
-                    <ul>
-                        <li><img src="images/ben.png" width="70" id="postImage"></li>
-                        <li><img src="images/fiveStars.png" width="200" id="postRating"></li>
-                        <li><h4>Budget Min - Budget Max</h4></li>
-                    </ul>
-                    
-                    <h3>Post Title</h3>
-                    <p>PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription</p>
-                </div>
-                
-                <div id="userPost">
-                    
-                    <ul>
-                        <li><img src="images/ben.png" width="70" id="postImage"></li>
-                        <li><img src="images/fiveStars.png" width="200" id="postRating"></li>
-                        <li><h4>Budget Min - Budget Max</h4></li>
-                    </ul>
-                    
-                    <h3>Post Title</h3>
-                    <p>PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription</p>
-                </div>
-                
-                <div id="userPost">
-                    
-                    <ul>
-                        <li><img src="images/ben.png" width="70" id="postImage"></li>
-                        <li><img src="images/fiveStars.png" width="200" id="postRating"></li>
-                        <li><h4>Budget Min - Budget Max</h4></li>
-                    </ul>
-                    
-                    <h3>Post Title</h3>
-                    <p>PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription</p>
-                </div>
-                
-                <div id="userPost">
-                    
-                    <ul>
-                        <li><img src="images/ben.png" width="70" id="postImage"></li>
-                        <li><img src="images/fiveStars.png" width="200" id="postRating"></li>
-                        <li><h4>Budget Min - Budget Max</h4></li>
-                    </ul>
-                    
-                    <h3>Post Title</h3>
-                    <p>PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription</p>
-                </div>
-                
-                <div id="userPost">
-                    
-                    <ul>
-                        <li><img src="images/ben.png" width="70" id="postImage"></li>
-                        <li><img src="images/fiveStars.png" width="200" id="postRating"></li>
-                        <li><h4>Budget Min - Budget Max</h4></li>
-                    </ul>
-                    
-                    <h3>Post Title</h3>
-                    <p>PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription</p>
-                </div>
-                
-                <div id="userPost">
-                    
-                    <ul>
-                        <li><img src="images/ben.png" width="70" id="postImage"></li>
-                        <li><img src="images/fiveStars.png" width="200" id="postRating"></li>
-                        <li><h4>Budget Min - Budget Max</h4></li>
-                    </ul>
-                    
-                    <h3>Post Title</h3>
-                    <p>PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription PostDescription</p>
-                </div>
+                <?php 
+                    $offset = ($page - 1) * 8;
+                    $sql = "SELECT * FROM posts WHERE completed='0'  ORDER BY date_added DESC LIMIT $offset, 8";
+                    $result = $con->query($sql);
+                    while ($array = $result->fetch_assoc()) {
+                ?>
+                        <div id="userPost">
+                            <ul>
+                                <li><img src="images/ben.png" width="70" id="postImage"></li>
+                                <li><img src="images/fiveStars.png" width="200" id="postRating"></li>
+                                <li><h4><?php echo "$" . $array['min_budget'] . " - $" . $array['max_budget']; ?></h4></li>
+                            </ul>
+                            
+                            <h3><?php echo $array['name']; ?></h3>
+                            <p><?php echo $array['description'] ?></p>
+                        </div>
+                <?php 
+                    }
+                ?>
                 
                 <div id="marketPages">
                     <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
+                        <?php 
+                            if ($page + 4 > ceil($totalposts/8)) {
+                                $navstart = ceil($totalposts/8) - 4;
+                                if (0 > $navstart) {
+                                    $navstart = 1;
+                                }
+                            } else {
+                                if ($page == 1) {
+                                    $navstart = 1;
+                                } else {
+                                    $navstart = $page - 1;
+                                }
+                            }
+                            for ($i = $navstart; $i < $navstart + 5; $i++) {
+                                if ($i <= ceil($totalposts/8)) {
+                                    echo "<li><a href='./marketplace.php?page=$i'>$i</a></li>";
+                                }
+                            }
+                        ?>
                     </ul>
                 </div>
                 
