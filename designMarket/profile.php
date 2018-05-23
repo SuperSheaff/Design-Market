@@ -21,16 +21,41 @@
     <body>
     
         <?php include('header.php'); ?>
-        
+            
         <div id="profileContainer">
-        
-            <div id="profileBanner">
+            
+            <div id="profileHeader">
+                <div id="profilePicture">
+                    <img src="images/aashish.png" width="250">
+                </div>
+                
+                <div id="profileInfo">
+                    <h2>Username</h2>
+                    <p>Description Description Description Description Description Description Description Description Description Description Description Description Description Description </p>
+                </div>
+                
             </div>
             
-            <div id="profileBanner">
-                <div id="profilePicture"></div>
+            <div id="profilePortfolio">
+                
+                <h2>Portfolio</h2>
+                
+                <ul>
+                    <li><img src="images/exampleLogo4.png" width="200"><img src="images/fourStars.png" width="200"></li>
+                    <li><img src="images/exampleLogo4.png" width="200"><img src="images/fourStars.png" width="200"></li>
+                    <li><img src="images/exampleLogo4.png" width="200"><img src="images/fourStars.png" width="200"></li>
+                    <li><img src="images/exampleLogo4.png" width="200"><img src="images/fourStars.png" width="200"></li>
+                    <li><img src="images/exampleLogo4.png" width="200"><img src="images/fourStars.png" width="200"></li>
+                    <li><img src="images/exampleLogo4.png" width="200"><img src="images/fourStars.png" width="200"></li>
+                    <li><img src="images/exampleLogo4.png" width="200"><img src="images/fourStars.png" width="200"></li>
+                    <li><img src="images/exampleLogo4.png" width="200"><img src="images/fourStars.png" width="200"></li>
+                    <li><img src="images/exampleLogo4.png" width="200"><img src="images/fourStars.png" width="200"></li>
+                </ul>
+                
+                <div id="profileMore">
+                    <a href="profilePortfolio.php"><button type="button" class="btn btn-default">See More...</button></a>
+                </div>
             </div>
-            
             
         </div>
         
