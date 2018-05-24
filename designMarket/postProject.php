@@ -110,6 +110,10 @@
 	            
 	            
 	            <input id="postProject" type="submit" value="Post Project">
+                
+                <!-- Should appear only after post is made when editting a post -->
+                
+                <input id="deleteProject" type="submit" value="Delete Project">
 
 	            <li>
 	                <h5>By pressing 'Post Project' you are agreeing to Design Markets Terms and Conditions</h5>

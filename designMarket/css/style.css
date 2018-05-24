@@ -933,3 +933,78 @@ button:active {
 }
 
 /* --- --- */
+
+/* --- jobPost Page Styling --- */
+
+#jobContainer {
+    margin: 0 auto;
+    width: 1200px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    background-color: white;
+    color: #243464;
+    padding: 15px;
+    box-shadow: 0px 0px 10px black; 
+    border-radius: 5px;
+    height: auto;
+}
+
+#jobContainer h2 {
+    color: #CC7854;
+}
+
+#jobContainer img {
+    float: left;
+    margin: 20px;
+    border: 1px solid #CC7854;
+}
+
+#jobHeader {
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#jobInspiration {
+    text-align: center;
+    width: 90%;
+    overflow-y: hidden;
+    margin-bottom: 50px;
+    margin: 0 auto;
+}
+
+#jobInspiration ul {
+    list-style: none;
+    padding: 20px;
+    margin-left: 0px;
+    margin-bottom: 25px;
+}
+
+#jobInspiration li {
+    list-style: none;
+    width: 30%;
+    padding: 1%;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+#jobOptions {
+    margin: 0 auto;
+    width: 50%;
+    min-height: 100px;
+    justify-content: center;
+    display: flex;
+}
+
+#jobOptions button {
+    margin: 0 auto;
+    font-size: 20px;
+    height: 35px;
+}
+
+#jobOptions a {
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+/* --- --- */
