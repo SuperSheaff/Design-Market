@@ -808,7 +808,7 @@ footer p {
 
 /* --- --- */
 
-/* --- Styling for the marketplace Page --- */
+/* --- Styling for the profile/portfolio Page --- */
 
 #profileContainer {
     margin: 0 auto;
@@ -889,4 +889,11 @@ footer p {
 #profileMore {
     margin-bottom: 15px;
 }
+
+#portfolioHeader {
+    padding: 30px;
+    text-align: center;
+}
+
+
 /* --- --- */
