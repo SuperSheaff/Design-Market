@@ -24,14 +24,21 @@
             
         <div id="profileContainer">
             
+            
+            <!-- Need php to have edit button appear for user only -->
+            
             <div id="profileHeader">
                 <div id="profilePicture">
                     <img src="images/aashish.png" width="250">
+                    <a href="editProfile.php"><button type="button">Edit Profile</button></a>
                 </div>
                 
                 <div id="profileInfo">
-                    <h2>Username</h2>
-                    <p>Description Description Description Description Description Description Description Description Description Description Description Description Description Description </p>
+                    <h2 id="username">Username</h2>
+                    <h3 id="userFullName">Users Full Name</h3>
+                    <img id="userRatingAvg" src="images/fiveStars.png" width="150">
+                    <p id="userAboutMe">About Me About Me About Me About Me About Me  About Me About Me About Me About Me About Me  About Me About Me About Me About Me About Me  About Me About Me About Me About Me About Me  About Me About Me About Me About Me About Me  About Me About Me About Me About Me About Me  </p>
+                    
                 </div>
                 
             </div>
@@ -53,7 +60,7 @@
                 </ul>
                 
                 <div id="profileMore">
-                    <a href="profilePortfolio.php"><button type="button" class="btn btn-default">See More...</button></a>
+                    <a href="profilePortfolio.php"><button type="button">See More...</button></a>
                 </div>
             </div>
             

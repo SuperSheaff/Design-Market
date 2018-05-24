@@ -224,7 +224,7 @@ header {
 /* --- Example Section of Homepage --- */
 
 #examples {
-    background-color: lightgrey;
+    background-color: #ccc;
     color: #2C7CAC;
     height: 700px;
     padding: 10px 10px 10px;
@@ -828,13 +828,13 @@ footer p {
 
 #profileHeader {
     padding: 30px;
-    height: 250px;
-    width: 100%;
+    overflow: hidden;
 }
 
 #profilePicture {
     float: left;
     width: 30%;
+    height: 300px;
 }
 
 #profilePicture img {
@@ -842,7 +842,7 @@ footer p {
 }
 
 #profileInfo {
-    float: left;
+    float: right;
     width: 65%;    
     text-align: center;
 }
@@ -855,6 +855,10 @@ footer p {
 #profileInfo p {
     text-align: left;
     padding: 15px;
+}
+
+#profileContainer a {
+    text-decoration: none;
 }
 
 #profilePortfolio {
@@ -895,5 +899,37 @@ footer p {
     text-align: center;
 }
 
+/* --- --- */
+
+/* --- Button Styling --- */
+
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #243464;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 9px #ccc;
+    
+    margin: 0 auto;
+    border-radius: 3px;
+    
+    justify-content: center;
+    display: flex;
+}
+
+button:hover {
+    background-color: #2C7CAC;
+}
+
+button:active {
+    background-color: #2C7CAC;
+    box-shadow: 0 5px grey;
+    transform: translateY(4px);
+}
 
 /* --- --- */

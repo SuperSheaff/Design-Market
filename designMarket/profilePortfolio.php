@@ -9,7 +9,7 @@
     
     <head>
         
-        <title>Design Market - Profile</title>
+        <title>Design Market - Portfolio</title>
         
         <link rel="icon" type="image/png" href="images/logo.png">
         
@@ -26,7 +26,8 @@
             
             <div id="portfolioHeader">
                 
-                <h2>Username's Portfolio</h2>
+                <h1>Username's Portfolio</h1>
+                <a href="profile.php"><button>Go Back</button></a>
                 
             </div>
             
