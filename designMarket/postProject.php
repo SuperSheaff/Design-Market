@@ -66,14 +66,14 @@
 	            <li>
 	                <h1>Describe your idea</h1>
 	                <p>Let the designers know what you want, detail your idea and what it involves. Give a good description of the project, a little bit about yourself, why this project started and where you are at with the project.</p>
-	                <textarea rows="4" cols="50" name="description" placeholder="Tell us about your vision..."></textarea>
+	                <textarea rows="4" cols="50" name="description" placeholder="Tell us about your vision..." maxlength="100"></textarea>
 	                <br><br>
 	            </li>
 	            
 	            <li>
 	                <h1>Inspiration</h1>
 	                <p>Upload images that relate to your project, whether that be progress images,  concept sketches or general inspiration.</p>
-	                <input type="file" name="uploadInspiration" multiple accept="image/*">
+	                <input type="file" name="uploadInspiration">
 	                <br><br>
 	            </li>
 	            
@@ -112,8 +112,6 @@
 	            <input id="postProject" type="submit" value="Post Project">
                 
                 <!-- Should appear only after post is made when editting a post -->
-                
-                <input id="deleteProject" type="submit" value="Delete Project">
 
 	            <li>
 	                <h5>By pressing 'Post Project' you are agreeing to Design Markets Terms and Conditions</h5>
