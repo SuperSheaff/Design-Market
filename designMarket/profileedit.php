@@ -17,3 +17,7 @@
 
 	$sql = "UPDATE users SET description='$description', image='$source'";
 ?>
+
+<script>
+    window.location.replace("home.php")
+</script>
