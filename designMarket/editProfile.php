@@ -31,7 +31,7 @@
             </li>
             
             
-            <form method="POST" action="" enctype="multipart/form-data">
+            <form method="POST" action="profileedit.php" enctype="multipart/form-data">
 	            <li>
 	                <h2>Profile Picture</h2>
                     <p>Upload a new Profile Picture</p>
