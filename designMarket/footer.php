@@ -22,29 +22,28 @@
                 
             <div id="siteMap">
                 
-                <ul>
+                
+				<ul>
                     <li><h4>Marketplace</h4></li>
-                    <li><p>Logo Design</p></li>
-                    <li><p>Poster Creation</p></li>
-                    <li><p>Animation</p></li>
-                    <li><p>Web Development</p></li>
-                     <li><p>Banner Production</p></li>
+                    <li><p>Logo Design</a></p></li>
+                    <li><p>Poster Design</a></p></li>
+                    <li><p>Web Design</a></p></li>
+                     <li><p>Banner Design</a></p></li>
                 </ul>
                 
                 <ul>
-                    <li><h4>Support</h4></li>
-                    <li><p>FAQ</p></li>
-                    <li><p>How does it work?</p></li>
-                    <li><p>Security</p></li>
+                    <li><h4><a href="support.php">Support</a></h4></li>
+                    <li><p><a href="faq.php">FAQ</a></p></li>
+                    <li><p><a href="howDoesItWork.php"> How does it work?</a></p></li>
                 </ul>
                 
-                <ul>
-                    <li><h4>Terms</h4></li>
-                    <li><p>Privacy Policy</p></li>
-                    <li><p>Terms and Conditions</p></li>
-                    <li><p>Copyright Policy</p></li>
-                    <li><p>Code of Conduct</p></li>
-                    <li><p>Fees and Charges</p></li>
+               
+
+			   <ul>
+                    <li><h4><a href="termsAndConditions.php">Terms</a></h4></li>
+                    <li><p><a href="privacyPolicy.php">Privacy Policy</a></p></li>
+                    <li><p><a href="termsAndConditions.php">Terms and Conditions</a></p></li>
+                    <li><p><a href="copyright.php">Copyright Policy</a></p></li>
                 </ul>
                 
             </div>
@@ -52,6 +51,7 @@
             <div id="copyright">
                 
                 <p>Design Market ® is a registered Project of University of Queensland (St Lucia)</p>
+				
                 <p>Copyright © 2018 Design Market Creation Team</p>
                 
             </div>
