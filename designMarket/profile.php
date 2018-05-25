@@ -22,62 +22,7 @@
         
         <!-- Space for scripts -->
         <script></script>
-        <style>
-            #accepted {
-                text-align: center;
-                width: 850px;
-                background: #f9f9f9;
-                box-shadow: inset 0px 0px 5px black; 
-                overflow-y: hidden;
-                margin-bottom: 50px;
-                margin: 0 auto;
-            }
-
-            #accepted ul {
-                margin-top: 15px;
-                list-style: none;
-                padding: 20px;
-                margin-left: 0px;
-                margin-bottom: 25px;
-                padding-bottom: 50px;
-            }
-
-            #accepted li {
-                list-style: none;
-                width: 30%;
-                padding: 1%;
-                display: block;
-                margin: 0 auto;
-                margin-bottom: 25px;
-            }
-
-            #posted {
-                text-align: center;
-                width: 850px;
-                background: #f9f9f9;
-                box-shadow: inset 0px 0px 5px black; 
-                overflow-y: hidden;
-                margin-bottom: 50px;
-                margin: 0 auto;
-            }
-
-            #posted ul {
-                margin-top: 15px;
-                list-style: none;
-                padding: 20px;
-                margin-left: 0px;
-                margin-bottom: 25px;
-                padding-bottom: 50px;
-            }
-
-            #posted li {
-                list-style: none;
-                width: 30%;
-                padding: 1%;
-                margin: 0 auto;
-                margin-bottom: 25px;
-            }
-        </style>
+        
         
     </head>
     
