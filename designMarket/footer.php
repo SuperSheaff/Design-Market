@@ -25,10 +25,10 @@
                 <ul>
                     <li><h4>Marketplace</h4></li>
                     <li><p>Logo Design</p></li>
-                    <li><p>Poster Design</p></li>
+                    <li><p>Poster Creation</p></li>
                     <li><p>Animation</p></li>
-                    <li><p>Web Design</p></li>
-                     <li><p>Banner Design</p></li>
+                    <li><p>Web Development</p></li>
+                     <li><p>Banner Production</p></li>
                 </ul>
                 
                 <ul>

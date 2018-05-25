@@ -9,7 +9,7 @@
     
     <head>
         
-        <title>Design Market - Profile</title>
+        <title>Design Market - Portfolio</title>
         
         <link rel="icon" type="image/png" href="images/logo.png">
         
@@ -24,28 +24,14 @@
             
         <div id="profileContainer">
             
-            
-            <!-- Need php to have edit button appear for user only -->
-            
-            <div id="profileHeader">
-                <div id="profilePicture">
-                    <img src="images/aashish.png" width="250">
-                    <a href="editProfile.php"><button type="button">Edit Profile</button></a>
-                </div>
+            <div id="portfolioHeader">
                 
-                <div id="profileInfo">
-                    <h2 id="username">Username</h2>
-                    <h3 id="userFullName">Users Full Name</h3>
-                    <img id="userRatingAvg" src="images/fiveStars.png" width="150">
-                    <p id="userAboutMe">About Me About Me About Me About Me About Me  About Me About Me About Me About Me About Me  About Me About Me About Me About Me About Me  About Me About Me About Me About Me About Me  About Me About Me About Me About Me About Me  About Me About Me About Me About Me About Me  </p>
-                    
-                </div>
+                <h1>Username's Portfolio</h1>
+                <a href="profile.php"><button>Go Back</button></a>
                 
             </div>
             
             <div id="profilePortfolio">
-                
-                <h2>Portfolio</h2>
                 
                 <ul>
                     <li><img src="images/exampleLogo4.png" width="200"><img src="images/fourStars.png" width="200"></li>
@@ -59,9 +45,6 @@
                     <li><img src="images/exampleLogo4.png" width="200"><img src="images/fourStars.png" width="200"></li>
                 </ul>
                 
-                <div id="profileMore">
-                    <a href="profilePortfolio.php"><button type="button">See More...</button></a>
-                </div>
             </div>
             
         </div>
