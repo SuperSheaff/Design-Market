@@ -1308,27 +1308,26 @@ label {
 }
 
 #accepted {
-		text-align: center;
-                width: 850px;
-                background: #f9f9f9;
-                box-shadow: inset 0px 0px 5px black; 
+    width: 40%;
                 overflow-y: hidden;
                 margin-bottom: 50px;
                 margin: 0 auto;
+    text-align: center;
+    float: left;
+    margin-left: 25px;
             }
 
             #accepted ul {
                 margin-top: 15px;
                 list-style: none;
                 padding: 20px;
-                margin-left: 0px;
                 margin-bottom: 25px;
                 padding-bottom: 50px;
             }
 
             #accepted li {
                 list-style: none;
-                width: 30%;
+                width: 100%;
                 padding: 1%;
                 display: block;
                 margin: 0 auto;
@@ -1337,12 +1336,12 @@ label {
 
             #posted {
                 text-align: center;
-                width: 850px;
-                background: #f9f9f9;
-                box-shadow: inset 0px 0px 5px black; 
+                width: 40%;
                 overflow-y: hidden;
                 margin-bottom: 50px;
                 margin: 0 auto;
+                float: right;
+                margin-right: 25px;
             }
 
             #posted ul {
@@ -1356,8 +1355,15 @@ label {
 
             #posted li {
                 list-style: none;
-                width: 30%;
+                width: 100%;
                 padding: 1%;
                 margin: 0 auto;
                 margin-bottom: 25px;
             }
+
+#profileItem {
+    background: #f9f9f9;
+    box-shadow: inset 0px 0px 5px black; 
+    padding: 15px;
+    width: 90%;
+}
