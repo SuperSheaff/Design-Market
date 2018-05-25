@@ -8,6 +8,7 @@
 	if (password_verify($_POST['password'], $array['hash'])) {
 		$_SESSION['username'] = $array['username'];
 		$_SESSION['password'] = $array['hash'];
+		$_SESSION['id'] = $array['id'];
 ?>
 <script>
 	window.location.replace("./home.php");
