@@ -166,33 +166,35 @@
             
             <div id="marketSearch">
                 <h2>Filter by:</h2>
-                <li><h3>Category</h3></li>
-                <li>
-                    <select name ="category">
-                        <option value="none">Choose a Category</option>
-                        <option value="Logo">Logo Design</option>
-                        <option value="Poster">Poster Design</option>
-                        <option value="Animation">Animation Design</option>
-                        <option value="Web">Web Design</option>
-                        <option value="Banner">Banner Design</option>
+                <ul id="filter">
+                    <li><h3>Category</h3></li>
+                    <li>
+                        <select name ="category">
+                            <option value="none">Choose a Category</option>
+                            <option value="Logo">Logo Design</option>
+                            <option value="Poster">Poster Design</option>
+                            <option value="Animation">Animation Design</option>
+                            <option value="Web">Web Design</option>
+                           <option value="Banner">Banner Design</option>
                     </select>
-                </li>
-                <li><h3>Budget</h3></li>
-                <li>
-                    <input type="number" name="budget">
-                </li>
-                <li>
-                    <h3>Date</h3>
-                </li>
-                <li>
-                    <input type="radio" name="recent" value="asc"> New to Old
-                </li>
-                <li>
-                    <input type="radio" name="recent" value="desc"> Old to New
-                </li>
-                <li></li>
-                <li><button type="submit" onclick="search()">Search</button></li>
-            </div>
+                    </li>
+                    <li><h3>Budget</h3></li>
+                    <li>
+                        <input type="number" name="budget">
+                    </li>
+                    <li>
+                        <h3>Date</h3>
+                    </li>
+                    <li>
+                        <input type="radio" name="recent" value="asc"> New to Old
+                    </li>
+                    <li>
+                        <input type="radio" name="recent" value="desc"> Old to New
+                    </li>
+                    <li></li>
+                    <li><button type="submit" onclick="search()">Search</button></li>
+                </ul>
+                </div>
             </div>
             
             <div id="footerBreaker">
