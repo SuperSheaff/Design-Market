@@ -116,16 +116,11 @@
                         $order = $_GET['order'];
                         $ordersql = "$order";
                     } else {
-                        $budgetsql = "DESC";
+                        $ordersql = "DESC";
                     }
 
                     $sql = "SELECT * FROM posts WHERE completed='0'" . $categorysql . $budgetsql . "ORDER BY date_added ". $ordersql ." LIMIT $offset, 8";
 
-                    if (isset($_GET['category']) && $_GET['category'] != "none") {
-                        $sql = "SELECT * FROM posts WHERE completed='0' AND category='$category' ORDER BY date_added DESC LIMIT $offset, 8";   
-                    } else {
-                        $sql = "SELECT * FROM posts WHERE completed='0' ORDER BY date_added DESC LIMIT $offset, 8";
-                    }
                     $result = $con->query($sql);
                     while ($array = $result->fetch_assoc()) {
                 ?>
