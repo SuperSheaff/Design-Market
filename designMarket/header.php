@@ -46,10 +46,14 @@
                     </ul>
                 </nav>
                 
-                <?php 
-                } else { 
-                            echo $_SESSION['username'];
-                } ?>
+                <?php
+                } else { ?>
+                    <nav id="loginButtons">
+                        <ul>
+                            <li><a id= "loginButton" href="profile.php"><?php echo $_SESSION['username']; ?></a></li> 
+                        </ul>
+                    </nav>
+                <?php } ?>
                 
             </div>
         

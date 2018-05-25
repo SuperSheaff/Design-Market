@@ -1,12 +1,25 @@
 <?php 
     $con = mysqli_connect("localhost", "admin", "password", "design_market");
     session_start();
-    if (isset($_GET['category'])) {
+
+        
+
+    if (isset($_GET['category']) && $_GET['category'] != "none") {
         $category = $_GET['category'];
-        $sql = "SELECT * FROM posts WHERE completed='0' AND category='$category'";   
+        $categorysql = " AND category='$category'";
     } else {
-        $sql = "SELECT * FROM posts WHERE completed='0'";
+        $categorysql = "";
     }
+
+    if (isset($_GET['budget'])) {
+        $budget = $_GET['budget'];
+        $budgetsql = " AND min_budget <= '$budget' AND max_budget >= '$budget'";
+    } else {
+        $budgetsql = "";
+    }
+
+    $sql = "SELECT * FROM posts WHERE completed='0'" . $categorysql . $budgetsql;
+
     $result = $con->query($sql);
     $totalposts = $result->num_rows;
 ?>
@@ -33,14 +46,12 @@
         ?>
         <!-- Space for scripts -->
         <script>
-            function searchCategory(element) {
+            function search() {
                 var page = <?php echo $page ?>;
-                var category = $(element).val();
-                if (category == "none") {
-
-                } else {
-                    window.location.replace("./marketplace.php?page="+page+"&category="+category);
-                }
+                var category = $("[name='category']").val();
+                var budget = $("[name='budget']").val();
+                var order =  $("[name='recent']").val();
+                window.location.replace("./marketplace.php?page="+page+"&category="+category+"&budget="+budget+"&order="+order);
             }
         </script>
         
@@ -87,7 +98,30 @@
                 <?php 
                     $offset = ($page - 1) * 8;
 
-                    if (isset($_GET['category'])) {
+                    if (isset($_GET['category']) && $_GET['category'] != "none") {
+                        $category = $_GET['category'];
+                        $categorysql = " AND category='$category'";
+                    } else {
+                        $categorysql = "";
+                    }
+
+                    if (isset($_GET['budget'])) {
+                        $budget = $_GET['budget'];
+                        $budgetsql = " AND min_budget <= '$budget' AND max_budget >= '$budget'";
+                    } else {
+                        $budgetsql = "";
+                    }
+
+                    if (isset($_GET['order'])) {
+                        $order = $_GET['order'];
+                        $ordersql = "$order";
+                    } else {
+                        $budgetsql = "DESC";
+                    }
+
+                    $sql = "SELECT * FROM posts WHERE completed='0'" . $categorysql . $budgetsql . "ORDER BY date_added ". $ordersql ." LIMIT $offset, 8";
+
+                    if (isset($_GET['category']) && $_GET['category'] != "none") {
                         $sql = "SELECT * FROM posts WHERE completed='0' AND category='$category' ORDER BY date_added DESC LIMIT $offset, 8";   
                     } else {
                         $sql = "SELECT * FROM posts WHERE completed='0' ORDER BY date_added DESC LIMIT $offset, 8";
@@ -136,17 +170,16 @@
             </div>
             
             <div id="marketSearch">
-                <h2>Search Parameters</h2>
-                <h3>Filter by:</h3>
+                <h2>Filter by:</h2>
                 <li><h3>Category</h3></li>
                 <li>
-                    <select name ="category" onchange="searchCategory(this)">
+                    <select name ="category">
                         <option value="none">Choose a Category</option>
                         <option value="Logo">Logo Design</option>
-                        <option value="Poster">Poster Creation</option>
-                        <option value="Animation">Animation</option>
-                        <option value="Web">Web Development</option>
-                        <option value="Banner">Banner Production</option>
+                        <option value="Poster">Poster Design</option>
+                        <option value="Animation">Animation Design</option>
+                        <option value="Web">Web Design</option>
+                        <option value="Banner">Banner Design</option>
                     </select>
                 </li>
                 <li><h3>Budget</h3></li>
@@ -162,6 +195,8 @@
                 <li>
                     <input type="radio" name="recent" value="desc"> Old to New
                 </li>
+                <li></li>
+                <li><button type="submit" onclick="search()">Search</button></li>
             </div>
             </div>
             
