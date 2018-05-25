@@ -43,7 +43,7 @@
                             <li>
                                 <h2>How Does it Work</h2>
                                 <img src="images/hdiw.png" width="300">
-                                <p>Create an account in minutes, post a job for designers to find, or look for jobs yourself</p>
+                                <p>Create an account in minutes and look for jobs yourself</p>
                             </li>
                         </a>
                     </ul>
