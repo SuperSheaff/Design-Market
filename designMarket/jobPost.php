@@ -45,17 +45,30 @@
             </div>
             
             <div id="jobOptions">
-            <a><button>Write a Comment</button></a>
+                
+            
             <a href="editPost.php"><button>Edit Post</button></a>
-            <a><button>Make a Bid</button></a>
             </div>
             
-            <div id="commentSection">
             
+            
+            <div id="bidContainer">
+                <h2>Make a Bid</h2>
+                
+                <textarea rows="4" cols="50" name="description" placeholder="Tell us about your vision for this job..." maxlength="100"></textarea>
+                <br>
+                <div id="postBudget" style="float: none; margin: 0 auto; margin-bottom: 15px; height: auto;">
+                    <h3>Bid Budget</h3>
+                    <input id="userBudgetBid" type="number" name="maxSum" value="100" step=".01" min="1">
+                </div>
+                <button style="font-size: 20px;">Make Bid</button>
             </div>
             
             <div id="bidSection">
                 
+                <div id="userBid">
+                
+                </div>
             </div>
             
         </div>
