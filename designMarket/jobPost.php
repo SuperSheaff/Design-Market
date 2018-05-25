@@ -40,15 +40,13 @@
                     
                 <ul>
                     <li><img src="images/exampleLogo4.png" width="250"></li>
-                    <li><img src="images/exampleLogo4.png" width="250"></li>
-                    <li><img src="images/exampleLogo4.png" width="250"></li>
                 </ul>
                     
             </div>
             
             <div id="jobOptions">
             <a><button>Write a Comment</button></a>
-            <a href="postProject.php"><button>Edit Post</button></a>
+            <a href="editPost.php"><button>Edit Post</button></a>
             <a><button>Make a Bid</button></a>
             </div>
             
