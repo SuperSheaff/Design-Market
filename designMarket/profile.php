@@ -118,37 +118,36 @@
           <div id="accepted">
                 <h2>Jobs Accepted</h2>
                 <ul>
+                    <?php 
+                    $sql = "SELECT * FROM posts WHERE awarded_to = '$userid'";
+                    $result = $con->query($sql);
+                    while ($accepted = $result->fetch_assoc()) {
+                    ?>
                     <li>
                         <div id="profileItem">
-                            <h3>Job Name</h3>
-                            <a href="uploadJob.php"><button style="padding: 10px;">Submit Work</button></a>
+                            <h3><?php echo $accepted['name'] ?></h3>
+                            <a href="uploadJob.php?id=<?php echo $accepted['id'] ?>""><button style="padding: 10px;">Submit Work</button></a>
                         </div>  
                     </li>
-                    
-                    <li>
-                        <div id="profileItem">
-                            <h3>Job Name</h3>
-                            <a href="uploadJob.php"><button style="padding: 10px;">Submit Work</button></a>
-                        </div>  
-                    </li>
+                <?php } ?>
                     
                 </ul>
             </div>
             <div id="posted">
                 <h2>Jobs Posted</h2>
                 <ul>
+                    <?php 
+                    $sql = "SELECT * FROM posts WHERE posted_by = '". $array['name'] ."'";
+                    $result = $con->query($sql);
+                    while ($posted = $result->fetch_assoc()) {
+                    ?>
                     <li>
                         <div id="profileItem">
-                            <h3>Job Name</h3>
-                            <a href="rateJob.php"><button style="padding: 10px;">Rate Job</button></a>
+                            <h3><?php $posted['name'] ?></h3>
+                            <a href="rateJob.php?id=<?php echo $posted['id'] ?>"><button style="padding: 10px;">Rate Job</button></a>
                         </div>  
                     </li>
-                    <li>
-                        <div id="profileItem">
-                            <h3>Job Name</h3>
-                            <a href="rateJob.php"><button style="padding: 10px;">Rate Job</button></a>
-                        </div>  
-                    </li>
+                <?php } ?>
                 </ul>
             </div>
             

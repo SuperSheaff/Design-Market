@@ -27,8 +27,9 @@
         <div id="formContainer">
             
             <h2>Upload Job</h2>
-            <img src="images/aashish.png" width="200">
             <form method="POST" action="upload.php" style="margin: 20px; overflow: hidden;">
+                <input type="hidden" name="userid" value="<?php echo $_SESSION['id'] ?>">
+                <input type="hidden" name="postid" value="<?php echo $_GET['id'] ?>">
                 <input type="file" name="uploadJob" style="width: 100%; display: flex; overflow: hidden; justify-contents: center; margin: 20px; text-align: center;">
                 <input type="submit" name="submit" value="Upload Job">  
                     <br><br>
