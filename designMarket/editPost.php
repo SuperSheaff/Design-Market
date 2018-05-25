@@ -107,11 +107,12 @@
                 
                 <!-- Should appear only after post is made when editting a post -->
                 
-                <input id="deleteProject" type="submit" value="Delete Project">
-
-	            <li>
-	                <h5>By pressing 'Post Project' you are agreeing to Design Markets Terms and Conditions</h5>
-	            </li>
+                <form method="POST" action="delete.php" enctype="multipart/form-data">
+                
+                    <input id="deleteProject" type="submit" value="Delete Project">
+                    
+                </form>
+                
             </form>
             
         
