@@ -1007,4 +1007,7 @@ button:active {
     text-decoration: none;
 }
 
+#filter {
+    list-style-type:none;
+}
 /* --- --- */
