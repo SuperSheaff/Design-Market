@@ -50,7 +50,7 @@
                 } else { ?>
                     <nav id="loginButtons">
                         <ul>
-                            <li><a id= "loginButton" href="profile.php?id<?php echo $_SESSION['id'] ?>"><?php echo $_SESSION['username']; ?></a></li>
+                            <li><a id= "loginButton" href="profile.php?id=<?php echo $_SESSION['id'] ?>"><?php echo $_SESSION['username']; ?></a></li>
                         </ul>
                     </nav>
                 <?php } ?>
