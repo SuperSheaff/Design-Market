@@ -22,6 +22,62 @@
         
         <!-- Space for scripts -->
         <script></script>
+        <style>
+            #accepted {
+                text-align: center;
+                width: 850px;
+                background: #f9f9f9;
+                box-shadow: inset 0px 0px 5px black; 
+                overflow-y: hidden;
+                margin-bottom: 50px;
+                margin: 0 auto;
+            }
+
+            #accepted ul {
+                margin-top: 15px;
+                list-style: none;
+                padding: 20px;
+                margin-left: 0px;
+                margin-bottom: 25px;
+                padding-bottom: 50px;
+            }
+
+            #accepted li {
+                list-style: none;
+                width: 30%;
+                padding: 1%;
+                display: block;
+                margin: 0 auto;
+                margin-bottom: 25px;
+            }
+
+            #posted {
+                text-align: center;
+                width: 850px;
+                background: #f9f9f9;
+                box-shadow: inset 0px 0px 5px black; 
+                overflow-y: hidden;
+                margin-bottom: 50px;
+                margin: 0 auto;
+            }
+
+            #posted ul {
+                margin-top: 15px;
+                list-style: none;
+                padding: 20px;
+                margin-left: 0px;
+                margin-bottom: 25px;
+                padding-bottom: 50px;
+            }
+
+            #posted li {
+                list-style: none;
+                width: 30%;
+                padding: 1%;
+                margin: 0 auto;
+                margin-bottom: 25px;
+            }
+        </style>
         
     </head>
     
@@ -101,13 +157,52 @@
                             $photo = "images/zeroStars.png";
                         }
                     ?>
-                    <li><img src="<?php echo $portarray['image'] ?>" width="200"><img src=<?php echo $photo ?> width="200"></li>
+                    <li>
+                        <a href = "jobPost.php?id=<?php echo $portarray['id'] ?>">
+                            <img src="<?php echo $portarray['image'] ?>" width="200">
+                            <img src=<?php echo $photo ?> width="200">
+                        </a>
+                    </li>
                 <?php } ?>
                 </ul>
                 
                 <div id="profileMore">
                     <a href="profilePortfolio.php"><button type="button">See More...</button></a>
                 </div>
+            </div>
+            <div id="accepted">
+                <h2>Jobs Accepted</h2>
+                <ul>
+                    <li>
+                        <h3>Job Name</h3>
+                        <button>SUBMIT</button>
+                    </li>
+                    <li>
+                        <h3>Job Name</h3>
+                        <button>SUBMIT</button>
+                    </li>
+                    <li>
+                        <h3>Job Name</h3>
+                        <button>SUBMIT</button>
+                    </li>
+                </ul>
+            </div>
+            <div id="posted">
+                <h2>Jobs Posted</h2>
+                <ul>
+                    <li>
+                        <h3>Job Name</h3>
+                        <button>RATE</button>
+                    </li>
+                    <li>
+                        <h3>Job Name</h3>
+                        <button>RATE</button>
+                    </li>
+                    <li>
+                        <h3>Job Name</h3>
+                        <button>RATE</button>
+                    </li>
+                </ul>
             </div>
             
         </div>
