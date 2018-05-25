@@ -49,7 +49,9 @@
                 while ($portarray = $portresult->fetch_assoc()) {
                     $totalrating += $portarray['rating'];
                 }
-                $totalrating = $totalrating/$porttotal;
+                if ($porttotal != 0) {
+                    $totalrating = $totalrating/$porttotal;
+                }
                 if (ceil($totalrating) == 1) {
                     $photo = "images/oneStars.png";
                 } else if (ceil($totalrating) == 2) {
