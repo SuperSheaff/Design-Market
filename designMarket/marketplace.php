@@ -124,7 +124,7 @@
                     $result = $con->query($sql);
                     while ($array = $result->fetch_assoc()) {
                 ?>
-                        <div id="userPost">
+                        <a href="jobPost.php?id=<?php echo $array[íd']; ?>"><div id="userPost">
                             <ul>
                                 <li><img src="images/ben.png" width="70" id="postImage"></li>
                                 <li><img src="images/fiveStars.png" width="200" id="postRating"></li>
@@ -134,7 +134,7 @@
                             <h3><?php echo $array['name']; ?></h3>
                             <h3><?php echo $array['category'] ?></h3>
                             <p><?php echo $array['description'] ?></p>
-                        </div>
+                        </div></a>
                 <?php 
                     }
                 ?>
