@@ -22,3 +22,7 @@
 
 	$sql = "UPDATE posts SET name='$name', description='$description', image='$source', min_budget='$minSum', max_budget='$maxSum', budget_type='budgetType";
 ?>
+
+<script>
+    window.location.replace("home.php")
+</script>
