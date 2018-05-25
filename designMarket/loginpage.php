@@ -6,7 +6,7 @@
 	$result=$con->query($sql);
 	$array = $result->fetch_assoc();
 	if (password_verify($_POST['password'], $array['hash'])) {
-		$_SESSION['username'] = $user;
+		$_SESSION['username'] = $array['username'];
 		$_SESSION['password'] = $array['hash'];
 ?>
 <script>
