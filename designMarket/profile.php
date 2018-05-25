@@ -115,37 +115,39 @@
                     <a href="profilePortfolio.php"><button type="button">See More...</button></a>
                 </div>
             </div>
-            <div id="accepted">
+          <div id="accepted">
                 <h2>Jobs Accepted</h2>
                 <ul>
                     <li>
-                        <h3>Job Name</h3>
-                        <button>SUBMIT</button>
+                        <div id="profileItem">
+                            <h3>Job Name</h3>
+                            <button style="padding: 10px;">Submit Work</button>
+                        </div>  
                     </li>
+                    
                     <li>
-                        <h3>Job Name</h3>
-                        <button>SUBMIT</button>
+                        <div id="profileItem">
+                            <h3>Job Name</h3>
+                            <button style="padding: 10px;">Submit Work</button>
+                        </div>  
                     </li>
-                    <li>
-                        <h3>Job Name</h3>
-                        <button>SUBMIT</button>
-                    </li>
+                    
                 </ul>
             </div>
             <div id="posted">
                 <h2>Jobs Posted</h2>
                 <ul>
                     <li>
-                        <h3>Job Name</h3>
-                        <button>RATE</button>
+                        <div id="profileItem">
+                            <h3>Job Name</h3>
+                            <button style="padding: 10px;">Rate Job</button>
+                        </div>  
                     </li>
                     <li>
-                        <h3>Job Name</h3>
-                        <button>RATE</button>
-                    </li>
-                    <li>
-                        <h3>Job Name</h3>
-                        <button>RATE</button>
+                        <div id="profileItem">
+                            <h3>Job Name</h3>
+                            <button style="padding: 10px;">Rate Job</button>
+                        </div>  
                     </li>
                 </ul>
             </div>
