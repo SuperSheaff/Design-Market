@@ -121,14 +121,14 @@
                     <li>
                         <div id="profileItem">
                             <h3>Job Name</h3>
-                            <button style="padding: 10px;">Submit Work</button>
+                            <a href="uploadJob.php"><button style="padding: 10px;">Submit Work</button></a>
                         </div>  
                     </li>
                     
                     <li>
                         <div id="profileItem">
                             <h3>Job Name</h3>
-                            <button style="padding: 10px;">Submit Work</button>
+                            <a href="uploadJob.php"><button style="padding: 10px;">Submit Work</button></a>
                         </div>  
                     </li>
                     
@@ -140,13 +140,13 @@
                     <li>
                         <div id="profileItem">
                             <h3>Job Name</h3>
-                            <button style="padding: 10px;">Rate Job</button>
+                            <a href="rateJob.php"><button style="padding: 10px;">Rate Job</button></a>
                         </div>  
                     </li>
                     <li>
                         <div id="profileItem">
                             <h3>Job Name</h3>
-                            <button style="padding: 10px;">Rate Job</button>
+                            <a href="rateJob.php"><button style="padding: 10px;">Rate Job</button></a>
                         </div>  
                     </li>
                 </ul>
