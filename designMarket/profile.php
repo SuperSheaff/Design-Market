@@ -1,5 +1,12 @@
 <?php 
     session_start();
+    $con = mysqli_connect("localhost", "admin", "password", "design_market");
+    if (isset($_GET['id'])) {
+        $userid = $_GET['id'];
+        $sql = "SELECT * FROM users WHERE id='$userid'";
+        $result = $con->query($sql);
+        $array = $result->fetch_assoc();
+    }
 ?>
 <!DOCTYPE html>
 <html>
@@ -29,15 +36,39 @@
             
             <div id="profileHeader">
                 <div id="profilePicture">
-                    <img src="images/aashish.png" width="250">
-                    <a href="editProfile.php"><button type="button">Edit Profile</button></a>
+                    <img src="<?php echo ($array['image'] == ''?'./images/default.png':$array['image'])?>" width="250">
+                    <?php if ($_SESSION['username'] == $array['username']) { ?>
+                        <a href="editProfile.php"><button type="button">Edit Profile</button></a>
+                    <?php } ?>
                 </div>
-                
+                <?php 
+                $portsql = "SELECT * FROM userportfolio WHERE userid='$userid'";
+                $portresult = $con->query($portsql);
+                $porttotal = $portresult->num_rows;
+                $totalrating = 0;
+                while ($portarray = $portresult->fetch_assoc()) {
+                    $totalrating += $portarray['rating'];
+                }
+                $totalrating = $totalrating/$porttotal;
+                if (ceil($totalrating) == 1) {
+                    $photo = "images/oneStars.png";
+                } else if (ceil($totalrating) == 2) {
+                    $photo = "images/twoStars.png";
+                } else if (ceil($totalrating) == 3) {
+                    $photo = "images/threeStars.png";
+                } else if (ceil($totalrating) == 4) {
+                    $photo = "images/fourStars.png";
+                } else if (ceil($totalrating) == 5) {
+                    $photo = "images/fiveStars.png";
+                } else {
+                    $photo = "images/zeroStars.png";
+                }
+                ?>
                 <div id="profileInfo">
-                    <h2 id="username">Username</h2>
-                    <h3 id="userFullName">Users Full Name</h3>
-                    <img id="userRatingAvg" src="images/fiveStars.png" width="150">
-                    <p id="userAboutMe">About Me About Me About Me About Me About Me  About Me About Me About Me About Me About Me  About Me About Me About Me About Me About Me  About Me About Me About Me About Me About Me  About Me About Me About Me About Me About Me  About Me About Me About Me About Me About Me  </p>
+                    <h2 id="username"><?php echo $array['name'] ?></h2>
+                    <h3 id="userFullName"><?php echo $array['username'] ?></h3>
+                    <img id="userRatingAvg" src=<?php echo $photo ?> width="150">
+                    <p id="userAboutMe"><?php echo $array['description'] ?></p>
                     
                 </div>
                 
@@ -48,15 +79,28 @@
                 <h2>Portfolio</h2>
                 
                 <ul>
-                    <li><img src="images/exampleLogo4.png" width="200"><img src="images/fourStars.png" width="200"></li>
-                    <li><img src="images/exampleLogo4.png" width="200"><img src="images/fourStars.png" width="200"></li>
-                    <li><img src="images/exampleLogo4.png" width="200"><img src="images/fourStars.png" width="200"></li>
-                    <li><img src="images/exampleLogo4.png" width="200"><img src="images/fourStars.png" width="200"></li>
-                    <li><img src="images/exampleLogo4.png" width="200"><img src="images/fourStars.png" width="200"></li>
-                    <li><img src="images/exampleLogo4.png" width="200"><img src="images/fourStars.png" width="200"></li>
-                    <li><img src="images/exampleLogo4.png" width="200"><img src="images/fourStars.png" width="200"></li>
-                    <li><img src="images/exampleLogo4.png" width="200"><img src="images/fourStars.png" width="200"></li>
-                    <li><img src="images/exampleLogo4.png" width="200"><img src="images/fourStars.png" width="200"></li>
+                    <?php 
+                    $portsql = "SELECT * FROM userportfolio WHERE userid='$userid'";
+                    $portresult = $con->query($portsql);
+                    $porttotal = $portresult->num_rows;
+                    while ($portarray = $portresult->fetch_assoc()) {
+                        $totalrating = $portarray['rating'];
+                        if (ceil($totalrating) == 1) {
+                            $photo = "images/oneStars.png";
+                        } else if (ceil($totalrating) == 2) {
+                            $photo = "images/twoStars.png";
+                        } else if (ceil($totalrating) == 3) {
+                            $photo = "images/threeStars.png";
+                        } else if (ceil($totalrating) == 4) {
+                            $photo = "images/fourStars.png";
+                        } else if (ceil($totalrating) == 5) {
+                            $photo = "images/fiveStars.png";
+                        } else {
+                            $photo = "images/zeroStars.png";
+                        }
+                    ?>
+                    <li><img src="<?php echo $portarray['image'] ?>" width="200"><img src=<?php echo $photo ?> width="200"></li>
+                <?php } ?>
                 </ul>
                 
                 <div id="profileMore">
