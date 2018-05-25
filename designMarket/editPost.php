@@ -54,7 +54,7 @@
             </li>
             
             
-            <form method="POST" action="createpost.php" enctype="multipart/form-data">
+            <form method="POST" action="postedit.php" enctype="multipart/form-data">
 	            <li>
 	                <h1>Edit project name</h1>
 	                <input type="text" name="name" placeholder="e.g Design a logo for my company">
