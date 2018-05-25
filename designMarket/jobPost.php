@@ -66,9 +66,53 @@
             
             <div id="bidSection">
                 
-                <div id="userBid">
+                <h2 style="text-align: center;">Bids</h2>
                 
+                <div id="userBid">
+                    
+                    <div id="bidInfo">
+                        <h2>Username</h2>
+                        <h3>$$$$$$$$</h3>
+                        <p>job reason job reason job reason job reason job reason job reason job reason job reason </p>
+                    </div>
+                    
+                    <div id="bidOptions">
+                        <button style="padding: 10px;">Accept Bid</button>
+                        <button style="padding: 10px;">Decline Bid</button>
+                    </div>
+                    
                 </div>
+                
+                <div id="userBid">
+                    
+                    <div id="bidInfo">
+                        <h2>Username</h2>
+                        <h3>$$$$$$$$</h3>
+                        <p>job reason job reason job reason job reason job reason job reason job reason job reason </p>
+                    </div>
+                    
+                    <div id="bidOptions">
+                        <button style="padding: 10px;">Accept Bid</button>
+                        <button style="padding: 10px;">Decline Bid</button>
+                    </div>
+                    
+                </div>
+                
+                <div id="userBid" style="margin-bottom: 10px;">
+                    
+                    <div id="bidInfo">
+                        <h2>Username</h2>
+                        <h3>$$$$$$$$</h3>
+                        <p>job reason job reason job reason job reason job reason job reason job reason job reason </p>
+                    </div>
+                    
+                    <div id="bidOptions">
+                        <button style="padding: 10px;">Accept Bid</button>
+                        <button style="padding: 10px;">Decline Bid</button>
+                    </div>
+                    
+                </div>
+                
             </div>
             
         </div>
