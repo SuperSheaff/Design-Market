@@ -132,7 +132,7 @@
                             </ul>
                             
                             <h3><?php echo $array['name']; ?></h3>
-                            <h3><?php echo $array['category'] ?><</h3>
+                            <h3><?php echo $array['category'] ?></h3>
                             <p><?php echo $array['description'] ?></p>
                         </div>
                 <?php 
