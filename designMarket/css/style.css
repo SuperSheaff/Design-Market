@@ -1367,3 +1367,8 @@ label {
     padding: 15px;
     width: 90%;
 }
+
+#profileContainer a {
+    text-decoration: none;
+    colour: #243464;
+}
